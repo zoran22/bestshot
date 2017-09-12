@@ -1,3 +1,0 @@
-#bestshot
-# bestshot
-# bestshot2

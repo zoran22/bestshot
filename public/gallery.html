@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <!-- <meta charset="utf-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bestShot-фото портал</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="css/gallery.css">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+        
+        html,
+        body {
+            height: 100%;
+        }
+        /* Navigation*/
+        
+        .navbar {
+            background-color: transparent;
+        }
+        
+       <!-- .top-nav-collapse {
+            background-color: #304a74;
+        } */-->
+        
+        footer.page-footer {
+            background-color: #304a74;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+       
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo6.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">Начало <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Галерия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Блог</a>
+                    </li>
+					 
+                </ul>
+				
+                <form class="form-inline waves-effect waves-light">
+                    <input class="form-control" type="text" placeholder="Search">
+                </form>
+				  <ul id="forms" class="navbar-nav mr-auto">
+
+                                            <a class="btn btn-default btn-sm"
+                                               href="php DIR login.php">Вход
+                                            </a>
+                                            <a  class="btn btn-default btn-sm" href="php DIR register.php">Регистрация
+                                            </a>
+                                        </ul>-->
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+	<div class="paralax">
+		<p class="text">Добре дошли в нашата галерия</p>
+	</div>
+	
+<div class="wrap">
+    <h2 class="titles">Вдъхновениe от природата<h2>
+  <!-- Define all of the tiles: -->
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/wood.jpg" onclick = "openModal();currentSlide(1)"  />
+			<div class="titleBox">Горска приказка</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/glacier.jpg" onclick = "openModal();currentSlide(2)" />
+			<div class="titleBox">Ледникът</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/nfff.jpg" onclick = "openModal();currentSlide(3)" />
+			<div class="titleBox">На края на света</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/nature.jpg" onclick = "openModal();currentSlide(4)" />
+			<div class="titleBox">Падащи листа</div>
+		</div>
+	</div>
+  
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/04.jpg" onclick = "openModal();currentSlide(5)" />
+			<div class="titleBox">Отблизо</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/church.jpg" onclick = "openModal();currentSlide(6)" />
+			<div class="titleBox">Пустинна църква</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/caribbean-islands.jpg" onclick = "openModal();currentSlide(7)" />
+			<div class="titleBox">Карибско съкровище</div>
+		</div>
+	</div>
+  
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/abondened.jpg" onclick = "openModal();currentSlide(8)" />
+			<div class="titleBox">Призрачна стая</div>
+		</div>
+	</div>
+	
+	<h2 class="titles">Цветен свят<h2>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/wedding.jpg" onclick = "openModal();currentSlide(9)" />
+			<div class="titleBox">Незабравим залез</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/download.jpg" onclick = "openModal();currentSlide(10)" />
+			<div class="titleBox">Муза</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/cuba.jpg" onclick = "openModal();currentSlide(11)" />
+			<div class="titleBox">Куба завинаги</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/2048-12.jpg" onclick = "openModal();currentSlide(12)" />
+			<div class="titleBox">Нови хоризонти</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/wedding1.jpg" onclick = "openModal();currentSlide(13)" />
+			<div class="titleBox">Заедно</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/paris.jpg" onclick = "openModal();currentSlide(14)" />
+			<div class="titleBox">Парижка утрин</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/mirror.jpg" onclick = "openModal();currentSlide(15)" />
+			<div class="titleBox">Огледало</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="boxInner">
+			<img src="img/gallery/canon.jpg" onclick = "openModal();currentSlide(16)" />
+			<div class="titleBox">На лов с фотоапарат</div>
+		</div>
+	</div>
+	
+</div>
+	<div class="paralax2">
+	<p class="text">“Във всяка снимка винаги присъстват поне двама: фотографът и зрителят.” - Ансел Адамс</p>
+  </div>
+<!-- /#wrap -->
+	<div id="my-modal" class="modal">
+		<p class="close" onclick="closeModal()">&times;</p>
+		<div class="lightbox">
+			
+			<div class="content">
+				<img src="img/gallery/wood.jpg" />
+			
+			</div>
+			<div class="content">
+				<img src="img/gallery/glacier.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/nfff.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/nature.jpg" />
+			</div>
+			
+			<div class="content">
+				<img src="img/gallery/04.jpg" />
+			</div>
+			
+			<div class="content">
+				<img src="img/gallery/church.jpg" />
+			</div>
+			
+			<div class="content">
+				<img src="img/gallery/caribbean-islands.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/abondened.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/wedding.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/download.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/cuba.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/2048-12.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/wedding1.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/paris.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/mirror.jpg" />
+			</div>
+			<div class="content">
+				<img src="img/gallery/canon.jpg" />
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+		</div>
+   </div>	
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+		<div id="gallery">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-4 offset-lg-1">
+                    <h5 class="title">Последни</h5>
+                    <ul>
+                        <li><a href="#!">Новини</a></li>
+                        <li><a href="#!">Фотографии</a></li>
+                        <li><a href="#!">Обучения</a></li>
+                        <li><a href="#!">Блог</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">За нашите гости и приятели </h5>
+                    <ul>
+                        <li><a href="#!">Пътеписи</a></li>
+                        <li><a href="#!">Конкурси</a></li>
+                        <li><a href="#!">Галерия</a></li>
+                        <li><a href="#!">Връзка с нас</a></li>
+						<li><a href="#!">Условия за ползване</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Последвайте ни</h5>
+                    <ul>
+						<li><a class="btn btn-social-icon btn-twitter">
+                              <span class="fa fa-twitter"></span>
+                           </a>
+						</li>
+					   <li>
+						  <a class="btn btn-social-icon btn-facebook">
+                             <span class="fa fa-facebook"></span>
+                          </a>
+				      </li>
+					  <li>
+					       <a class="btn btn-social-icon btn-instagram">
+                             <span class="fa fa-instagram"></span>
+                           </a>
+						</li>
+                    </ul>
+                </div>
+                <!--/.Fourth column--> 
+
+    <!--Section heading-->
+  
+   
+    <div id="contact" class="container">
+      <form class="contact-us form-horizontal" method="post">
+        <legend>Контактна форма</legend>        
+        <div class="control-group">
+            <label class="control-label">Име и Фамилия</label>
+            <div class="controls">
+                <div class="input-prepend">
+                <span class="add-on"><i class="icon-user"></i></span>
+                    <input type="text" class="input-xlarge" name="name" placeholder="Име и Фамилия">
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Email</label>
+            <div class="controls">
+                <div class="input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+                    <input type="text" class="input-xlarge" name="email" placeholder="Email">
+                </div>
+            </div>    
+        </div>
+          <div class="control-group">
+            <label class="control-label">Коментар</label>
+                <div class="controls">
+                   <div class="input-prepend">
+                      <span class="add-on"><i class="icon-pencil"></i></span>
+                    <textarea name="comment" class="span4" rows="4" cols="80" placeholder="Коментар (Макс 200 символа)"></textarea>
+                   </div>
+                 </div>
+               </div>
+                  <div class="control-group">
+                      <div class="controls">
+                         <button type="submit" class="btn btn-primary">Изпрати</button>
+                      </div>    
+                  </div>
+               </form>
+            </div>
+       
+        <!--/First column-->
+          </dir>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2015 Copyright: <a href="http://bestShot.bg"> bestShot.bg </a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+	
+</body>
+
+</html>

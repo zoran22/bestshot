@@ -1,0 +1,14 @@
+
+*.jpg
+*.jpeg
+*.png
+img
+public/img
+public/font
+public/sass
+admin_panel/public/images
+admin_pane/vendor
+admin_panel/dist
+admin_panel/data
+admin_panel/js
+admin_panel/less
